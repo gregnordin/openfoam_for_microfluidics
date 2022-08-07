@@ -72,7 +72,11 @@ OpenFOAM by default only works with 3D mesh elements so to run a 2D case (say in
 - Visualize with ParaView.
 - Analyze files created by `postProcess` with python in jupyterlab.
 
-## Example case
+## Example cases
+
+### Straight channel
+
+`cases/straight_channels/straight_channel_rotate_0deg` &rarr; See bash commands in `scripts/run_mesh_1_cases.txt`.
 
 **TBD**: *insert example case instructions here.*
 
