@@ -74,11 +74,11 @@ OpenFOAM by default only works with 3D mesh elements so to run a 2D case (say in
 
 ## Example cases
 
-### Straight channel
+### Straight channel - 300 &mu;m long, 100 &mu;m wide
 
 `cases/straight_channels/straight_channel_rotate_0deg` &rarr; See bash commands in `scripts/run_mesh_1_cases.txt`.
 
-### Straight channel - rotated 45&deg;
+### Same, but rotated 45&deg;
 
 `cases/straight_channels/straight_channel_rotate_45deg` See bash commands in `scripts/run_mesh_1_cases.txt`.
 
