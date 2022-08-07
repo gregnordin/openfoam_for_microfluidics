@@ -42,6 +42,7 @@ I am creating this repository primarily to aid my students in learning how to se
         - Follow [openfoam-docker-arm](https://github.com/gerlero/openfoam-docker-arm)
     - Other OS's and Mac OS Intel processors:
         - [The Complete Guide to Docker & OpenFOAM](https://www.cfdengine.com/blog/how-to-install-openfoam-anywhere-with-docker/).
+- Install `parabolicVelocity` boundary condition into Docker OpenFoam installation. See [boundary_conditions/README.md](boundary_conditions/README.md).
 - Install [Paraview](https://www.paraview.org/).
 - Install python/jupyterlab.
     - The simplest method is to just install [Anaconda python](https://www.anaconda.com/products/distribution). This is the method I recommend.
