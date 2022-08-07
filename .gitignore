@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+.ipynb_checkpoints
+*.aux
+*.log
+*.cb
+*.cb2
+*.gz
+*.bbl
+*.blg
+~$*.xlsx
+.venv
+.bash_history
+.cache/
+run_cases
