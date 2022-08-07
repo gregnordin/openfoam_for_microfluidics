@@ -82,6 +82,14 @@ OpenFOAM by default only works with 3D mesh elements so to run a 2D case (say in
 
 `cases/straight_channels/straight_channel_rotate_45deg` See bash commands in `scripts/run_mesh_1_cases.txt`.
 
+### To do
+
+- Move `analysis` for straight channel cases up one directory and update jupyter notebook accordingly.
+- Consolidate mesh and `icoFoam` cases for straight channels.
+- Add diffusion (`scalarTransportFoam`) cases for straight channels.
+- Add Paraview screen saves for mesh, velocity field, and analyte concentration.
+- Add linescans for velocity field using `postProcess` and analyze in notebook.
+- Add a `README` to straight channel cases directory?
 
 ## Questions/issues as I assemble this repository:
 
