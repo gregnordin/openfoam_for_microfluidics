@@ -19,3 +19,8 @@ To use the boundary condition:
 ## Example
 
 See `pitzDailyParabolicInlet`. Run the case by `cd`'ing into the directory and executing `simpleFoam > log.simpleFoam`. Open in Parafoam by selecting `pitzDailyParabolicInlet.foam` from the `Open` menu item.
+
+## Details
+
+See [Implement a parabolicVelocity fixedValue boundary condition](http://www.tfd.chalmers.se/~hani/kurser/OS_CFD_2020/lectureNotes/implementParabolicVelocityFixedValueBoundaryCondition.pdf).
+
