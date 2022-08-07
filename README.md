@@ -2,6 +2,16 @@
 
 Document how to set up and run OpenFoam for microfluidics cases to solve for vector velocity field with `icoFoam` and time-dependent analyte diffusion using `scalarTransportFoam`. Note that the latter case depends on already having the vector velocity field, which is what `icoFoam` solves for.
 
+I am creating this repository primarily to aid my students in learning how to set up and use OpenFoam for our 3D printed microfluidics research. An example of our work can be found in the following open-access paper, [Spatially and optically tailored 3D printing for highly miniaturized and integrated microfluidics](https://www.nature.com/articles/s41467-021-25788-w), published in Nature Communications in 2021.
+
+# OpenFoam resources
+
+- [Documentation](https://www.openfoam.com/documentation/overview).
+- [User Guide](https://www.openfoam.com/documentation/user-guide).
+    - Read the Overview in [Chapter 1](https://www.openfoam.com/documentation/user-guide/1-introduction) and the file structure in [Chapter 2](https://www.openfoam.com/documentation/user-guide/2-openfoam-cases). 
+- [Tutorial Guide](https://www.openfoam.com/documentation/tutorial-guide).
+- [CFD-Online OpenFoam sub-forum](https://www.cfd-online.com/Forums/openfoam/).
+
 
 # Overall approach
 
