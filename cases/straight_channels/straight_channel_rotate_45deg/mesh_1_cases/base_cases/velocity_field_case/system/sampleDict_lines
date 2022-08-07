@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    location        system;
+    object          sampleDict_lines;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+type sets;
+
+setFormat csv;
+
+interpolationScheme cellPointFace;
+
+fields 
+(
+    U
+);
+
+sets 
+(
+    line_scan_x0
+    {
+        type uniform;
+        axis distance;
+        start (-35.355339059e-6  -35.355339059e-6       5e-6);
+        end   (35.355339059e-6   35.355339059e-6       5e-6);
+        nPoints     500;
+    }
+/*    line_scan_xm25
+    {
+        type uniform;
+        axis y;
+        start (-25e-6  -50e-6       5e-6);
+        end   (-25e-6   50e-6       5e-6);
+        nPoints     500;
+    }
+    line_scan_x25
+    {
+        type uniform;
+        axis y;
+        start (25e-6  -50e-6       5e-6);
+        end   (25e-6   50e-6       5e-6);
+        nPoints     500;
+    }
+    line_scan_xm40
+    {
+        type uniform;
+        axis y;
+        start (-40e-6  -50e-6       5e-6);
+        end   (-40e-6   50e-6       5e-6);
+        nPoints     500;
+    }
+    line_scan_x40
+    {
+        type uniform;
+        axis y;
+        start (40e-6  -50e-6       5e-6);
+        end   (40e-6   50e-6       5e-6);
+        nPoints     500;
+    }
+*/
+);
+
+// *********************************************************************** //
