@@ -1,0 +1,20 @@
+
+# Create mesh
+cd ~/my_cases/9_straight_channel_cfmesh/geometry_straight_channel_0deg/mesh_1_cases/
+rm -r run_cases/mesh_case
+cp -r base_cases/mesh_case run_cases/
+cd run_cases/mesh_case
+time cartesian2DMesh > log.cartesion2DMesh
+
+# Calculate velocity field
+cd ~/my_cases/9_straight_channel_cfmesh/geometry_straight_channel_0deg/mesh_1_cases/
+rm -r run_cases/velocity_field_case
+cp -r base_cases/velocity_field_case run_cases/
+cd run_cases/velocity_field_case
+cp -r ../mesh_case/constant/polyMesh constant/
+time icoFoam > log.icoFoam
+#    real	0m6.864s
+#    user	0m1.885s
+#    sys	0m0.397s
+time postProcess -func sampleDict_lines
+time postProcess -func sampleDict_surface
