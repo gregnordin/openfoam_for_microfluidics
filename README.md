@@ -85,10 +85,13 @@ OpenFOAM by default only works with 3D mesh elements so to run a 2D case (say in
 ### To do
 
 - Move `analysis` for straight channel cases up one directory and update jupyter notebook accordingly.
-- Consolidate mesh and `icoFoam` cases for straight channels.
+- &#9989; Consolidate mesh and `icoFoam` cases for straight channels.
 - Add diffusion (`scalarTransportFoam`) cases for straight channels.
-- Add Paraview screen saves for mesh, velocity field, and analyte concentration.
-- Add linescans for velocity field using `postProcess` and analyze in notebook.
+- Add Paraview screen saves for &#9989; mesh, &#9989; velocity field, and analyte concentration.
+- &#9989; Add linescans for velocity field using `postProcess`
+- Analyze linescans in jupyter notebook.
+- &#9989; Add planar sampling of velocity field using `postProcess`
+- Analyze planar sampling in jupyter notebook and create streamline plot.
 - Add a `README` to straight channel cases directory?
 
 ## Questions/issues as I assemble this repository:
