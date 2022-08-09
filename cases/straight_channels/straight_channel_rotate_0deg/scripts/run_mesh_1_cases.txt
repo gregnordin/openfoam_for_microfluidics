@@ -1,20 +1,26 @@
+#----------------------------------------------------------------------------------------
+# Before starting, make sure proper STL file, combined.stl, 
+# is copied from the geometry directory into the velocity_field_case directory!
+#----------------------------------------------------------------------------------------
+
+# Copy velocity field base case
+# cd into <whatever the correct path is>/straight_channels/straight_channel_rotate_0deg/mesh_1_cases/run_cases/
+rm -r velocity_field_case
+cp -r ../base_cases/velocity_field_case .
+cd velocity_field_case
 
 # Create mesh
-cd ~/my_cases/9_straight_channel_cfmesh/geometry_straight_channel_0deg/mesh_1_cases/
-rm -r run_cases/mesh_case
-cp -r base_cases/mesh_case run_cases/
-cd run_cases/mesh_case
 time cartesian2DMesh > log.cartesion2DMesh
+# real	0m0.631s
+# user	0m0.516s
+# sys	0m0.398s
 
 # Calculate velocity field
-cd ~/my_cases/9_straight_channel_cfmesh/geometry_straight_channel_0deg/mesh_1_cases/
-rm -r run_cases/velocity_field_case
-cp -r base_cases/velocity_field_case run_cases/
-cd run_cases/velocity_field_case
-cp -r ../mesh_case/constant/polyMesh constant/
 time icoFoam > log.icoFoam
 #    real	0m6.864s
 #    user	0m1.885s
 #    sys	0m0.397s
+
+## Sample along a line and along a plane for all time steps
 time postProcess -func sampleDict_lines
 time postProcess -func sampleDict_surface
